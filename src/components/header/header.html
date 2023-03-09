@@ -1,22 +1,63 @@
 <header class="header">
-	<div class="container">
+	<div class="header__container container">
 		<div class="header__wrap">
 			<a class="logo">
-				<svg class="logo__img">
-					<use href="img/sprite.svg#logo"></use>
-				</svg>
+				<div class="logo__inner-logo">
+					<svg class="logo__img">
+						<use href="img/sprite.svg#logo"></use>
+					</svg>
+				</div>
+				<div class="logo__inner">
+					<span class="logo__excerpt logo__excerpt--bold">Moscowqual</span>
+					<span class="logo__excerpt">Ремонт бытовой техники</span>
+				</div>
 			</a>
-			<button class="burger btn-reset">
-				<span class="burger__line"></span>
-			</button>
+			<div class="header__inner-social">
+				<a class="header__social" href="#">
+					<svg class="header__icon header__icon--instagram">
+						<use href="img/sprite.svg#instagram"></use>
+					</svg>
+				</a>
+				<a class="header__social" href="#">
+					<svg class="header__icon">
+						<use href="img/sprite.svg#vk"></use></svg
+				></a>
+				<a class="header__social" href="#">
+					<svg class="header__icon">
+						<use href="img/sprite.svg#telegram"></use></svg
+				></a>
+				<a class="header__social" href="#">
+					<svg class="header__icon">
+						<use href="img/sprite.svg#whatsapp"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="header__inner">
+				<svg class="header__icon header__icon--clock">
+					<use href="img/sprite.svg#clock"></use>
+				</svg>
+				<span class="header__mode">Режим работы</span>
+				<span class="header__time"
+					>ПН-ПТ с 07:00 до 24:00 Сб, ВС: с 07:00 до 24:00</span
+				>
+			</div>
+			<div class="header__inner-contacts">
+				<a class="header__link-number link-reset" href="tel:+74957556983">
+					<svg class="header__icon-phone">
+						<use href="img/sprite.svg#phone"></use>
+					</svg>
+					<span class="header__number">+7(495) 755 69 83</span>
+				</a>
+				<a class="header__link link-reset" href="#">Заказать звонок</a>
+			</div>
 			<nav class="nav">
 				<ul class="nav__menu list-reset menu">
-					<li class="menu__item">
+					<li class="menu__item menu__item--main">
 						<a
 							class="menu__link link-reset"
 							href="#"
 							data-goto=".page__section-1"
-							>Раздел №1</a
+							>Главная</a
 						>
 					</li>
 					<li class="menu__item">
@@ -24,7 +65,7 @@
 							class="menu__link link-reset"
 							href="#"
 							data-goto=".page__section-2"
-							>Раздел №2</a
+							>Услуги и цены</a
 						>
 					</li>
 					<li class="menu__item">
@@ -32,11 +73,46 @@
 							class="menu__link link-reset"
 							href="#"
 							data-goto=".page__section-3"
-							>Раздел №3</a
+							>Гарантия</a
+						>
+					</li>
+					<li class="menu__item">
+						<a
+							class="menu__link link-reset"
+							href="#"
+							data-goto=".page__section-3"
+							>Юр.лица</a
+						>
+					</li>
+					<li class="menu__item">
+						<a
+							class="menu__link link-reset"
+							href="#"
+							data-goto=".page__section-3"
+							>Контакты</a
+						>
+					</li>
+					<li class="menu__item">
+						<a
+							class="menu__link link-reset"
+							href="#"
+							data-goto=".page__section-3"
+							>Вопрос-ответ</a
+						>
+					</li>
+					<li class="menu__item">
+						<a
+							class="menu__link link-reset"
+							href="#"
+							data-goto=".page__section-3"
+							>Полезная информация</a
 						>
 					</li>
 				</ul>
 			</nav>
+			<button class="burger btn-reset">
+				<span class="burger__line"></span>
+			</button>
 		</div>
 	</div>
 </header>

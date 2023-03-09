@@ -3,49 +3,188 @@ body
     overflow: hidden
 
 .header
-  position: fixed
+  position: relative
   top: 0
   left: 0
   width: 100%
   z-index: 10
-  background-color: $mexican-red
-  padding: 25px 0
+  background: linear-gradient(90deg, #443682 14.58%, #28418A 39.75%, #00669C 68.41%)
+  padding-top: 35px
+  padding-bottom: 25px
+
+  &__container
+    max-width: 1435px
+    margin: 0 0 0 140px
 
   &__wrap
     display: flex
     justify-content: space-between
     align-items: center
 
+  &__inner-social
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 150px
+    width: 100%
+
+  &__social
+    max-width: 30px
+    height: 30px
+
+  &__icon
+    width: 30px
+    height: 30px
+    transition: transform .4s
+    &:hover
+      transform: scale(0.90)
+    &--instagram
+      border-radius: 5px
+      background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%)
+    &--clock
+      &:hover
+        transform: scale(1)
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 370px
+    width: 100%
+
+  &__mode
+    font-family: "Roboto-Regular", sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 23px
+    color: $white
+
+  &__time
+    max-width: 165px
+    font-family: "Roboto-Regular", sans-serif
+    font-weight: 400
+    font-size: 15px
+    line-height: 18px
+    color: $white
+
+  &__inner-contacts
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 335px
+    width: 100%
+
+  &__link-number
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 160px
+    width: 100%
+    &:hover .header__number
+      &::after
+        width: 100%
+
+  &__icon-phone
+    width: 20px
+    height: 20px
+
+  &__number
+    font-size: 15px
+    line-height: 18px
+    color: $white
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 0
+      border-top: 2px solid $white
+      top: 103%
+      left: 50%
+      transform: translateX(-50%)
+      transition: width .4s
+
+  &__link
+    padding: 14px 19px
+    border: 1px solid $white
+    border-radius: 8px
+    font-size: 15px
+    line-height: 18px
+    color: $white
+    transition: all .4s
+    &:hover
+      background-color: $white
+      color: $black
+
 .logo
+  display: flex
+  justify-content: space-between
+  align-items: center
   position: relative
-  width: 200px
-  height: 65px
+  width: 330px
   z-index: 5
+
+  &__inner-logo
+    margin-right: 24px
+    width: 90px
+    height: 90px
 
   &__img
     width: 100%
     height: 100%
 
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__excerpt
+    font-size: 18px
+    line-height: 21px
+    color: $white
+    &--bold
+      font-family: "Roboto-Bold", sans-serif
+      font-weight: 700
+      font-size: 20px
+      line-height: 23px
+
 .burger
   display: none
+
+.nav
+  padding: 30px 65px
+  max-width: 1170px
+  width: 100%
+  border-radius: 0px 0px 20px 20px
+  background-color: $white
+  position: absolute
+  bottom: -56%
+  left: 50%
+  transform: translateX(-50%)
 
 .menu
 
   &__item
     position: relative
-    color: $white
-    &::after
+    &::after, &::before
       position: absolute
       content: ""
       width: 0
-      border-top: 2px dashed white
+      border-top: 2px solid $black
       top: 100%
       right: 0
       transition: all .4s
+    &::before
+      display: none
     &:hover
       &::after
         width: 100%
         left: 0
+    &.active, &--main
+      font-family: "Roboto-Bold", sans-serif
+      font-weight: 700
+      &::before
+        display: inline-block
+        width: 100%
 
 /*-------------------------*/
 
@@ -65,9 +204,10 @@ body.touch
     align-items: center
 
     &__item
-      margin-right: 30px
-      font-size: 20px
-      color: $white
+      margin-right: 63px
+      font-size: 16px
+      line-height: 19px
+      color: $black
       &:last-child
         margin-right: 0
 
@@ -123,7 +263,7 @@ body.touch
       left: 0
       width: 100%
       height: 115px
-      background-color: $mexican-red
+      background: linear-gradient(90deg, #443682 14.58%, #28418A 39.75%, #00669C 68.41%)
       z-index: 2
     &.active
       left: 0
