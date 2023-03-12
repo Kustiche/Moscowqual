@@ -417,6 +417,14 @@ body.lock {
   }
 }
 
+.title {
+  margin: 0;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+
 body.lock {
   overflow: hidden;
 }
@@ -1489,5 +1497,77 @@ body.touch .menu__link {
     font-size: 14px;
     line-height: 16px;
   }
+}
+
+.questions__container {
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 1690px;
+}
+.questions__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.questions__inner-img {
+  max-width: 1013px;
+  line-height: 0;
+  position: relative;
+}
+.questions__inner-img::after {
+  position: absolute;
+  content: "";
+  width: 378px;
+  height: 879px;
+  top: -12%;
+  right: -37%;
+  background-image: url(../img/questions/questions-decoration.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.questions__img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
+          box-shadow: 0px 4px 15px 5px rgba(95, 36, 168, 0.5);
+  border-radius: 10px;
+}
+.questions__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 570px;
+}
+.questions__title {
+  margin-bottom: 35px;
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+  line-height: 119.69%;
+}
+.questions__text {
+  margin: 0;
+  margin-bottom: 35px;
+  max-width: 372px;
+  font-size: 15px;
+  line-height: 119.69%;
+}
+.questions__link {
+  -webkit-box-shadow: 2px 4px 20px rgba(0, 187, 52, 0.5);
+          box-shadow: 2px 4px 20px rgba(0, 187, 52, 0.5);
 }
 /*# sourceMappingURL=style.min.css.map */
