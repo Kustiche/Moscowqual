@@ -13,17 +13,39 @@
 		<header class="header">
 	<div class="header__container container">
 		<div class="header__wrap">
-			<a class="logo">
-				<div class="logo__inner-logo">
+			<div class="header__inner-logo">
+				<a class="logo">
 					<svg class="logo__img">
 						<use href="img/sprite.svg#logo"></use>
 					</svg>
+					<div class="logo__content">
+						<div class="logo__inner">
+							<span class="logo__excerpt logo__excerpt--bold">Moscowqual</span>
+							<span class="logo__excerpt">Ремонт бытовой техники</span>
+						</div>
+					</div>
+				</a>
+				<div class="header__inner-social header__inner-social--mobile">
+					<a class="header__social" href="#">
+						<svg class="header__icon header__icon--instagram">
+							<use href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+					<a class="header__social" href="#">
+						<svg class="header__icon">
+							<use href="img/sprite.svg#vk"></use></svg
+					></a>
+					<a class="header__social" href="#">
+						<svg class="header__icon">
+							<use href="img/sprite.svg#telegram"></use></svg
+					></a>
+					<a class="header__social" href="#">
+						<svg class="header__icon">
+							<use href="img/sprite.svg#whatsapp"></use>
+						</svg>
+					</a>
 				</div>
-				<div class="logo__inner">
-					<span class="logo__excerpt logo__excerpt--bold">Moscowqual</span>
-					<span class="logo__excerpt">Ремонт бытовой техники</span>
-				</div>
-			</a>
+			</div>
 			<div class="header__inner-social">
 				<a class="header__social" href="#">
 					<svg class="header__icon header__icon--instagram">
@@ -54,13 +76,44 @@
 				>
 			</div>
 			<div class="header__inner-contacts">
-				<a class="header__link-number link-reset" href="tel:+74957556983">
-					<svg class="header__icon-phone">
-						<use href="img/sprite.svg#phone"></use>
+				<div class="header__contacts-content">
+					<a class="header__link-number link-reset" href="tel:+74957556983">
+						<svg class="header__icon-phone">
+							<use href="img/sprite.svg#phone"></use>
+						</svg>
+						<span class="header__number">+7(495) 755 69 83</span>
+					</a>
+					<a class="header__link link-reset" href="#">Заказать звонок</a>
+				</div>
+				<div class="header__inner header__inner--mobile">
+					<svg class="header__icon header__icon--clock">
+						<use href="img/sprite.svg#clock"></use>
 					</svg>
-					<span class="header__number">+7(495) 755 69 83</span>
-				</a>
-				<a class="header__link link-reset" href="#">Заказать звонок</a>
+					<span class="header__mode">Режим работы</span>
+					<span class="header__time"
+						>ПН-ПТ с 07:00 до 24:00 Сб, ВС: с 07:00 до 24:00</span
+					>
+				</div>
+			</div>
+			<div class="header__inner-contacts-mobile">
+				<div class="header__inner header__inner--mobile">
+					<svg class="header__icon header__icon--clock">
+						<use href="img/sprite.svg#clock"></use>
+					</svg>
+					<span class="header__mode">Режим работы</span>
+					<span class="header__time"
+						>ПН-ПТ с 07:00 до 24:00 Сб, ВС: с 07:00 до 24:00</span
+					>
+				</div>
+				<div class="header__contacts-content">
+					<a class="header__link-number link-reset" href="tel:+74957556983">
+						<svg class="header__icon-phone">
+							<use href="img/sprite.svg#phone-mobile"></use>
+						</svg>
+						<span class="header__number">+7(495) 755 69 83</span>
+					</a>
+					<a class="header__link link-reset" href="#">Заказать звонок</a>
+				</div>
 			</div>
 			<nav class="nav">
 				<ul class="nav__menu list-reset menu">
@@ -131,7 +184,7 @@
 
 		<main class="main">
 			<section class="hero">
-	<div class="container">
+	<div class="hero__container container">
 		<div class="hero__wrap">
 			<h1 class="hero__title">Ремонт стиральных машин в&nbsp;Москве</h1>
 			<ul class="hero__list list-reset">
@@ -165,7 +218,7 @@
 				<span class="triggers__descr">Бесплатная экспресс-диагностика</span>
 			</div>
 			<div class="triggers__card">
-				<div class="triggers__inner-icon">
+				<div class="triggers__inner-icon triggers__inner-icon--mobile">
 					<svg class="triggers__icon triggers__icon--petite">
 						<use href="img/sprite.svg#quality"></use>
 					</svg>
