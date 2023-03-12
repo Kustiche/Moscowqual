@@ -1,10 +1,47 @@
 .triggers
+  padding-bottom: 115px
+  @media screen and ( max-width: 992px )
+    padding-top: 65px
+    padding-bottom: 105px
+  @media screen and ( max-width: 768px )
+    padding-top: 110px
+    padding-bottom: 60px
+  @media screen and ( max-width: 576px )
+    padding-top: 80px
+    padding-bottom: 40px
 
   &__wrap
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
     flex-wrap: wrap
+    margin: 0 auto
+    gap: 35px 40px
+    @media screen and ( max-width: 992px )
+      max-width: 560px
+    @media screen and ( max-width: 768px )
+      max-width: 450px
+      gap: 20px 30px
+    @media screen and ( max-width: 576px )
+      gap: 15px
+      position: relative
+      &::after, &::before
+        position: absolute
+        content: ""
+        width: 210px
+        height: 220px
+        bottom: 0
+        left: -4%
+        background-image: url(../img/triggers-img/triggers-decoration-left.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+      &::before
+        background-image: url(../img/triggers-img/triggers-decoration-right.png)
+        width: 104px
+        height: 241px
+        top: 20%
+        left: 70%
 
   &__card
     display: flex
@@ -15,6 +52,15 @@
     padding: 50px 40px
     background: linear-gradient(180deg, #A6DBF5 0%, #451874 97.92%)
     border-radius: 28px
+    z-index: 2
+    @media screen and ( max-width: 768px )
+      padding: 40px 19px
+      max-width: 210px
+      min-height: 225px
+    @media screen and ( max-width: 576px )
+      padding: 30px 0 15px 3px
+      max-width: 155px
+      min-height: 168px
 
   &__inner-icon
     display: flex
@@ -25,16 +71,45 @@
     height: 100px
     background-color: $white
     border-radius: 50%
+    @media screen and ( max-width: 768px )
+      margin-bottom: 15px
+      width: 90px
+      height: 90px
+    @media screen and ( max-width: 576px )
+      margin-bottom: 10px
+      width: 69px
+      height: 69px
+    &--mobile
+      @media screen and ( max-width: 576px )
+        margin-bottom: 5px
 
   &__icon
     width: 75px
     height: 75px
+    @media screen and ( max-width: 768px )
+      width: 71px
+      height: 71px
+    @media screen and ( max-width: 576px )
+      width: 53px
+      height: 53px
     &--petite
       width: 60px
       height: 60px
+      @media screen and ( max-width: 768px )
+        width: 57px
+        height: 57px
+      @media screen and ( max-width: 576px )
+        width: 42px
+        height: 42px
     &--iconaverage
       width: 65px
       height: 65px
+      @media screen and ( max-width: 768px )
+        width: 61px
+        height: 62px
+      @media screen and ( max-width: 576px )
+        width: 46px
+        height: 46px
 
   &__descr
     font-family: "Roboto-Bold", sans-serif
@@ -43,3 +118,6 @@
     line-height: 18px
     color: $white
     text-align: center
+    @media screen and ( max-width: 576px )
+      font-size: 14px
+      line-height: 16px

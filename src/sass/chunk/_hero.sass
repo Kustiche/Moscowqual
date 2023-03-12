@@ -5,11 +5,78 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
+  @media screen and ( max-width: 992px )
+    padding-top: 145px
+    padding-bottom: 175px
+    background-image: url(../img/hero/hero-bg-mobile.png)
+    position: relative
+    &::after, &::before
+      position: absolute
+      content: ""
+      width: 218px
+      height: 507px
+      top: 19%
+      right: 0
+      background-image: url(../img/hero/hero-decoration-stars-right.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    &::before
+      width: 234px
+      height: 246px
+      background-image: url(../img/hero/hero-decoration-stars-left.png)
+      top: 21%
+      left: 11%
+  @media screen and ( max-width: 768px )
+    padding-top: 110px
+    padding-bottom: 310px
+    &::after
+      top: 16%
+      right: 0
+    &::before
+      top: 18%
+      left: 15%
+  @media screen and ( max-width: 576px )
+    padding-top: 80px
+    padding-bottom: 190px
+    &::after
+      width: 76px
+      height: 176px
+      top: 65%
+    &::before
+      top: 28%
+      left: 5%
+
+  &__container
+    padding-left: 40px
+    @media screen and ( max-width: 576px )
+      padding-left: 20px
 
   &__wrap
     display: flex
     flex-direction: column
     align-items: flex-start
+    position: relative
+    @media screen and ( max-width: 992px )
+      &::after
+        position: absolute
+        content: ""
+        width: 588px
+        height: 374px
+        top: 45%
+        right: -15px
+        background-image: url(../img/hero/hero-decoration-human.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    @media screen and ( max-width: 768px )
+      &::after
+        top: 105%
+    @media screen and ( max-width: 576px )
+      &::after
+        width: 359px
+        height: 228px
+        top: 112%
 
   &__title
     margin: 0
@@ -20,9 +87,16 @@
     font-size: 39px
     line-height: 46px
     color: $white
+    @media screen and ( max-width: 576px )
+      margin-bottom: 15px
+      max-width: 240px
+      font-size: 25px
+      line-height: 29px
 
   &__list
     margin-bottom: 40px
+    @media screen and ( max-width: 576px )
+      margin-bottom: 15px
 
   &__item
     padding-left: 13px
@@ -38,3 +112,5 @@
       left: 0
       border-radius: 5px
       transform: translateY(-50%)
+    @media screen and ( max-width: 576px )
+      font-size: 17px
